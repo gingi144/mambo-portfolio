@@ -1,23 +1,26 @@
-
+import React, { lazy, Suspense } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { ThemeProvider } from './context/ThemeContext'
+
 import Navbar from './components/common/Navbar'
 import Footer from './components/common/Footer'
 import Loader from './components/common/Loader'
 
-// Lazy load pages for better performance
+// Lazy-loaded pages
 const Home = lazy(() => import('./pages/Home'))
 const Projects = lazy(() => import('./pages/Projects'))
 const Certificates = lazy(() => import('./pages/Certificates'))
 const Contact = lazy(() => import('./pages/Contact'))
 const About = lazy(() => import('./pages/About'))
 const Skills = lazy(() => import('./pages/Skills'))
+
 const App = () => {
   return (
     <ThemeProvider>
       <Router>
         <div style={styles.appContainer}>
           <Navbar />
+
           <main style={styles.mainContent}>
             <Suspense fallback={<Loader />}>
               <Routes>
@@ -30,6 +33,7 @@ const App = () => {
               </Routes>
             </Suspense>
           </main>
+
           <Footer />
         </div>
       </Router>
@@ -45,7 +49,7 @@ const styles = {
   },
   mainContent: {
     flex: 1,
-    paddingTop: '80px' // Account for fixed navbar
+    paddingTop: '80px' // space for fixed navbar
   }
 }
 
