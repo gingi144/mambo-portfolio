@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from 'react'
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { ThemeProvider } from './context/ThemeContext'
 import Navbar from './components/common/Navbar'
