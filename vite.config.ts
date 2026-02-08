@@ -4,6 +4,8 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: '/mambo-portfolio/', // important for GitHub Pages
+
   build: {
     outDir: 'dist',
     sourcemap: false,
@@ -23,10 +25,12 @@ export default defineConfig({
     },
     chunkSizeWarningLimit: 1000
   },
+
   server: {
     port: 3000,
     host: true
   },
+
   preview: {
     port: 4173,
     host: true

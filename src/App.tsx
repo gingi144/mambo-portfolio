@@ -1,12 +1,17 @@
+<<<<<<< HEAD
 import React, { Suspense, lazy, useState, useEffect } from 'react'
+=======
+import React, { lazy, Suspense } from 'react'
+>>>>>>> fbb46e814f880b296c21bfc5b9d4b86ca1f8e814
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { ThemeProvider } from './context/ThemeContext'
+
 import Navbar from './components/common/Navbar'
 import Footer from './components/common/Footer'
 import Loader from './components/common/Loader'
 import RouteFallbackLoader from './components/common/RouteFallbackLoader' // New component
 
-// Lazy load pages for better performance
+// Lazy-loaded pages
 const Home = lazy(() => import('./pages/Home'))
 const Projects = lazy(() => import('./pages/Projects'))
 const Certificates = lazy(() => import('./pages/Certificates'))
@@ -72,6 +77,7 @@ const App = () => {
       }}>
         <Router>
           <Navbar />
+
           <main style={styles.mainContent}>
             <Suspense fallback={<RouteFallbackLoader />}>
               <Routes>
@@ -84,6 +90,7 @@ const App = () => {
               </Routes>
             </Suspense>
           </main>
+
           <Footer />
         </Router>
       </div>
@@ -100,7 +107,7 @@ const styles = {
   },
   mainContent: {
     flex: 1,
-    paddingTop: '80px' // Account for fixed navbar
+    paddingTop: '80px' // space for fixed navbar
   }
 }
 
