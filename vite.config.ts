@@ -1,15 +1,14 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/mambo-portfolio/', // important for GitHub Pages
+  base: '/',  // use '/' for Vercel root
 
   build: {
     outDir: 'dist',
     sourcemap: false,
-    minify: 'terser',
+    minify: true, // esbuild minifier
     rollupOptions: {
       output: {
         manualChunks: {
