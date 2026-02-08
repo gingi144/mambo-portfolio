@@ -134,7 +134,6 @@ const Skills = () => {
             alignItems: 'center',
             gap: '8px',
             background: 'rgba(14, 165, 233, 0.1)',
-            border: '1px solid rgba(14, 165, 233, 0.2)',
             borderRadius: '20px',
             padding: '8px 20px',
             marginBottom: '20px'
@@ -196,7 +195,7 @@ const Skills = () => {
                 style={{
                   padding: '12px 24px',
                   borderRadius: '10px',
-                  border: 'none',
+                  border: `1px solid ${activeCategory === key ? category.color : '#334155'}`,
                   background: activeCategory === key 
                     ? category.color 
                     : 'rgba(15, 23, 42, 0.7)',
@@ -207,8 +206,7 @@ const Skills = () => {
                   display: 'flex',
                   alignItems: 'center',
                   gap: '8px',
-                  transition: 'all 0.3s ease',
-                  border: `1px solid ${activeCategory === key ? category.color : '#334155'}`
+                  transition: 'all 0.3s ease'
                 }}
               >
                 {category.icon}
