@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 import React, { Suspense, lazy, useState, useEffect } from 'react'
-=======
-import React, { lazy, Suspense } from 'react'
->>>>>>> fbb46e814f880b296c21bfc5b9d4b86ca1f8e814
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { ThemeProvider } from './context/ThemeContext'
 
