@@ -10,8 +10,7 @@
     "preview": "vite preview",
     "lint": "eslint . --ext ts,tsx",
     "type-check": "tsc --noEmit",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "vercel-build": "npm run build"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.7",
@@ -38,7 +37,6 @@
     "globals": "^16.5.0",
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.46.4",
-    "vite": "^7.2.4",
-    "gh-pages": "^6.1.1"
+    "vite": "^7.2.4"
   }
 }
