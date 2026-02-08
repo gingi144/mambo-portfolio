@@ -1,0 +1,40 @@
+/* index.css - Reset everything */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* Remove ALL constraints from #root */
+#root {
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: left !important;
+}
+
+/* Make sure body doesn't hide overflow */
+body {
+  overflow: auto !important;
+}
+
+/* Debug styles */
+.debug-border {
+  border: 2px solid red !important;
+}
+
+.debug-border-green {
+  border: 2px solid green !important;
+}

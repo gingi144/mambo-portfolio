@@ -217,7 +217,7 @@ const About = () => {
               gap: '12px',
             }}>
               <motion.div
-                whileHover={{ scale: 1.05 }}
+                whileHover={{ scale: 1.00 }}
                 whileTap={{ scale: 0.95 }}
                 style={{
                   display: 'flex',
@@ -231,11 +231,11 @@ const About = () => {
               >
                 <Calendar size={16} />
                 <span style={{ fontSize: '14px', color: colors.gray }}>
-                  8+ years in tech
+                  4+ years in tech
                 </span>
               </motion.div>
               <motion.div
-                whileHover={{ scale: 1.05 }}
+                whileHover={{ scale: 1.00 }}
                 whileTap={{ scale: 0.95 }}
                 style={{
                   display: 'flex',
@@ -345,7 +345,7 @@ const About = () => {
             {Object.entries(stories).map(([key, story]) => (
               <motion.button
                 key={key}
-                whileHover={{ scale: 1.05 }}
+                whileHover={{ scale: 1.00 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => setActiveStory(key)}
                 style={{
@@ -538,7 +538,7 @@ const About = () => {
                 {stories.beyond.passions.map((passion, index) => (
                   <motion.div
                     key={index}
-                    whileHover={{ scale: 1.05, y: -5 }}
+                    whileHover={{ scale: 1.00, y: 0 }}
                     style={{
                       padding: '16px',
                       background: 'rgba(14, 165, 233, 0.1)',
@@ -603,7 +603,7 @@ const About = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
-                whileHover={{ y: -5 }}
+                whileHover={{ y: 0 }}
                 style={{
                   padding: '32px',
                   background: 'rgba(15, 23, 42, 0.7)',

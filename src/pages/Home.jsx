@@ -115,6 +115,7 @@ const TECH_STACK = [
   { name: 'MongoDB/PostgreSQL', level: 87 },
   { name: 'CI/CD Tools', level: 92 },
   { name: 'C++', level: 80 },
+  { name: 'PHP/LARAVEL', level: 98 },
 ]
 
 /* ===========================

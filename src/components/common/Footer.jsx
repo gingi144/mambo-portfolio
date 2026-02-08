@@ -20,7 +20,7 @@ const Footer = () => {
 
   const styles = {
     footer: {
-      background: 'linear-gradient(to bottom, #111701, #000000)',
+      background: 'linear-gradient(to bottom, #060606, #000000)',
       borderTop: '1px solid #374151',
       position: 'relative',
       overflow: 'hidden',
