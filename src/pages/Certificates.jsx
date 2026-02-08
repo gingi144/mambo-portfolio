@@ -584,7 +584,6 @@ const styles = {
     alignItems: 'center',
     gap: '8px',
     background: 'rgba(14, 165, 233, 0.1)',
-    border: '1px solid rgba(14, 165, 233, 0.2)',
     borderRadius: '20px',
     padding: '8px 16px',
     marginBottom: '20px'
@@ -702,7 +701,6 @@ const styles = {
     gap: '8px',
     background: 'linear-gradient(to right, #0ea5e9, #8b5cf6)',
     color: 'white',
-    border: 'none',
     borderRadius: '10px',
     padding: '14px 24px',
     fontSize: '15px',
@@ -778,20 +776,17 @@ const styles = {
   filterButton: {
     padding: '8px 16px',
     background: 'rgba(15, 23, 42, 0.7)',
-    border: '1px solid #334155',
     borderRadius: '8px',
     color: '#94a3b8',
     fontSize: '13px',
     fontWeight: '500',
     cursor: 'pointer',
-    transition: 'all 0.3s ease',
-    border: 'none'
+    transition: 'all 0.3s ease'
   },
   
   filterButtonActive: {
     background: '#0ea5e9',
-    color: 'white',
-    borderColor: '#0ea5e9'
+    color: 'white'
   },
   
   resultsInfo: {
@@ -941,7 +936,6 @@ const styles = {
     gap: '8px',
     background: '#0ea5e9',
     color: 'white',
-    border: 'none',
     borderRadius: '8px',
     padding: '12px',
     fontSize: '14px',
@@ -1030,7 +1024,6 @@ const styles = {
     gap: '8px',
     background: '#0ea5e9',
     color: 'white',
-    border: 'none',
     borderRadius: '10px',
     padding: '14px 28px',
     fontSize: '15px',
